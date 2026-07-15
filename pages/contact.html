@@ -8,35 +8,103 @@
 </head>
 <body>
     
-   <header class="site-header">
+<body>
+
+  <!-- HEADER — unchanged -->
+  <header class="site-header">
     <div class="logo">NanoChar <span>Africa</span></div>
     <nav>
-    <a href="../index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="products.html">Products</a>
-    <a href="platform.html">Digital Platform</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-   </header>
+      <a href="../index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="platform.html">Digital Platform</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a class="btn btn-primary" href="contact.html">Request Biochar</a>
+  </header>
 
-<section class="section">
-  <h2 class="section-title">Get In Touch</h2>
-  <form class="contact-form" action="mailto:hello@nanocharafrica.com" method="post" enctype="text/plain">
-    <label for="name">Name</label>
-    <input id="name" type="text" name="name" title="Name" placeholder="Your Name" required>
-    <label for="email">Email</label>
-    <input id="email" type="email" name="email" title="Email" placeholder="you@example.com" required>
-    <label for="message">Message</label>
-    <textarea id="message" name="message" title="Message" rows="5" placeholder="Your message" required></textarea>
-    <button type="submit" class="btn btn-primary">Send Message</button>
-  </form>
-</section>
+  <section class="section">
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="section-intro">
+      Whether you're a farmer, partner, or investor, we'd love to hear from you.
+    </p>
+
+    <div class="contact-grid">
+
+      <!-- LEFT: the form -->
+      <form class="contact-form contact-form-card" action="mailto:hello@nanocharafrica.com.ng" method="post" enctype="text/plain">
+        <label>Name</label>
+        <input type="text" name="name" required>
+        <label>Email</label>
+        <input type="email" name="email" required>
+        <label>Message</label>
+        <textarea name="message" rows="5" required></textarea>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </form>
+
+      <!-- RIGHT: contact info cards -->
+      <div class="contact-info">
+        <div class="contact-info-card">
+          <div class="contact-icon">📧</div>
+          <div>
+            <h4>Email</h4>
+            <p>hello@nanocharafrica.com.ng</p>
+          </div>
+        </div>
+        <div class="contact-info-card">
+          <div class="contact-icon">📞</div>
+          <div>
+            <h4>Phone</h4>
+            <p>+234 XXX XXX XXXX</p>
+          </div>
+        </div>
+        <div class="contact-info-card">
+          <div class="contact-icon">💬</div>
+          <div>
+            <h4>WhatsApp</h4>
+            <p>+234 XXX XXX XXXX</p>
+          </div>
+        </div>
+        <div class="contact-info-card">
+          <div class="contact-icon">📍</div>
+          <div>
+            <h4>Location</h4>
+            <p>Nigeria</p>
+          </div>
+        </div>
+        <div class="contact-social">
+          <h4>Follow Us</h4>
+          <div class="social-links">
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Twitter/X</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER — same expanded footer as your other pages -->
+  <footer class="site-footer footer-full">
+    <div class="footer-col">
+      <h4>NanoChar Africa</h4>
+      <p>Restoring soil, empowering farmers.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="../index.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="platform.html">Digital Platform</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>hello@nanocharafrica.com.ng</p>
+      <p>+234 XXX XXX XXXX</p>
+    </div>
+    <p class="footer-copyright">&copy; 2026 NanoChar Africa. All rights reserved.</p>
+  </footer>
 
 
-<footer class="site-footer">
-  <p>&copy; 2026 NanoChar Africa. Restoring soil, empowering farmers.</p>
-</footer>
-
-<script src="script.js"></script>
 </body>
 </html>
