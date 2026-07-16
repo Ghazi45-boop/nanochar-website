@@ -5,10 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Platform - NanoChar Africa</title>
     <link rel="stylesheet" href="../style.css">
-</head>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+    <link rel="icon" type="image/png" href="images/logo.jpeg">
+  </head>
+
+
 <body>
     
-   <header class="site-header">
+   <header class="site-header" >
     <div class="logo">NanoChar <span>Africa</span></div>
     <nav>
     <a href="../index.html">Home</a>
@@ -28,14 +32,14 @@
  
   <div class="demo-box">
     <h3>Quick Soil Assessment</h3>
-    <label>Soil pH</label>
+    <label for="soilPh">Soil pH</label>
     <select id="soilPh">
       <option value="acidic">Acidic (below 6.0)</option>
       <option value="neutral">Neutral (6.0–7.0)</option>
       <option value="alkaline">Alkaline (above 7.0)</option>
     </select>
  
-    <label>Crop Type</label>
+    <label for="cropType">Crop Type</label>
     <select id="cropType">
       <option value="maize">Maize</option>
       <option value="cassava">Cassava</option>

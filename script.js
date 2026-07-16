@@ -1,3 +1,8 @@
+const SUPABASE_URL = "https://supabase.com/dashboard/project/nymskokdckuhgrtxickx";
+const SUPABASE_ANON_KEY = "sb_publishable_K3YVXr89M4tqDSsc6hPHzw_K6CO83mK";
+const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+
+
 const sampleRecommendations = {
     "acidic-maize": "Apply 2.5 tons of Premium Biochar to raise PH and boost maize yield.",
     "neutral-maize": "Apply 1.5 tons of Biochar Conditioner for steady nutrient release.",
