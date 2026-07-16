@@ -11,110 +11,53 @@
 
 
 <body>
- <body>
-
-  <!-- HEADER — unchanged -->
-  <header class="site-header">
+    
+   <header class="site-header" >
     <div class="logo">NanoChar <span>Africa</span></div>
     <nav>
-      <a href="../index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="products.html">Products</a>
-      <a href="platform.html">Digital Platform</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <a class="btn btn-primary" href="contact.html">Request Biochar</a>
-  </header>
+    <a href="../index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="platform.html">Digital Platform</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+   </header>
+      <a class="btn btn-primary" href="contact.html">Request Biochar</a>
 
-  <!-- NEW: Platform intro banner -->
-  <section class="platform-hero">
-    <div class="platform-hero-icon">📱</div>
-    <h1>Digital Soil Intelligence Platform</h1>
-    <p>Register your farm, get personalized soil recommendations, and track your progress — all in one place.</p>
-    <span class="preview-badge">🔎 Preview Mode — Real accounts, live data</span>
-  </section>
+<section class="section">
+  <h2 class="section-title">Digital Soil Intelligence Platform</h2>
+  <p style="text-align:center;color:var(--grey);margin-bottom:30px;">
+    🔎 Preview mode — sample data. Real accounts coming in Phase 2.
+  </p>
+ 
+  <div class="demo-box">
+    <h3>Quick Soil Assessment</h3>
+    <label for="soilPh">Soil pH</label>
+    <select id="soilPh">
+      <option value="acidic">Acidic (below 6.0)</option>
+      <option value="neutral">Neutral (6.0–7.0)</option>
+      <option value="alkaline">Alkaline (above 7.0)</option>
+    </select>
+ 
+    <label for="cropType">Crop Type</label>
+    <select id="cropType">
+      <option value="maize">Maize</option>
+      <option value="cassava">Cassava</option>
+      <option value="vegetables">Vegetables</option>
+    </select>
+ 
+    <button class="btn btn-primary" onclick="getRecommendation()">Get Recommendation</button>
+ 
+    <div id="resultBox" class="result-box" style="display:none;"></div>
+  </div>
+</section>
 
-  <section class="section platform-section">
 
-    <!-- Auth card -->
-    <div id="authBox" class="glass-card fade-in-up">
-      <div class="card-header">
-        <div class="card-icon">👤</div>
-        <h3>Farmer Login</h3>
-      </div>
-      <label>Email</label>
-      <input type="email" id="authEmail" placeholder="you@example.com">
-      <label>Password</label>
-      <input type="password" id="authPassword" placeholder="••••••••">
-      <div class="btn-row">
-        <button class="btn btn-primary" onclick="signUp()">Create Account</button>
-        <button class="btn btn-secondary" onclick="signIn()">Log In</button>
-      </div>
-      <p id="authMessage" class="auth-message"></p>
-    </div>
+      <footer class="site-footer">
+  <p>&copy; 2026 NanoChar Africa. Restoring soil, empowering farmers.</p>
+</footer>
 
-    <!-- Dashboard card (hidden until login, same as before) -->
-    <div id="dashboardBox" class="glass-card fade-in-up" style="display:none;">
-
-      <div class="card-header">
-        <div class="card-icon">🌾</div>
-        <h3>Add Your Farm</h3>
-      </div>
-      <label>Farm Name</label>
-      <input type="text" id="farmName" placeholder="e.g. Green Valley Farm">
-      <label>Location</label>
-      <input type="text" id="farmLocation" placeholder="e.g. Kaduna, Nigeria">
-      <button class="btn btn-primary full-width" onclick="addFarm()">Save Farm</button>
-
-      <h3 class="sub-heading">Your Farms</h3>
-      <div id="farmsList" class="farms-list"></div>
-
-      <div class="divider-line"></div>
-
-      <div class="card-header">
-        <div class="card-icon">🧪</div>
-        <h3>New Soil Assessment</h3>
-      </div>
-      <label>Soil pH</label>
-      <select id="assessPh">
-        <option value="acidic">Acidic (below 6.0)</option>
-        <option value="neutral">Neutral (6.0–7.0)</option>
-        <option value="alkaline">Alkaline (above 7.0)</option>
-      </select>
-      <label>Crop Type</label>
-      <select id="assessCrop">
-        <option value="maize">Maize</option>
-        <option value="cassava">Cassava</option>
-        <option value="vegetables">Vegetables</option>
-      </select>
-      <button class="btn btn-primary full-width" onclick="submitAssessment()">Get Recommendation</button>
-
-      <div id="recommendationResult" class="result-box" style="display:none;"></div>
-    </div>
-
-  </section>
-
-  <!-- FOOTER — unchanged -->
-  <footer class="site-footer footer-full">
-    <div class="footer-col">
-      <h4>NanoChar Africa</h4>
-      <p>Restoring soil, empowering farmers.</p>
-    </div>
-    <div class="footer-col">
-      <h4>Explore</h4>
-      <a href="../index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="products.html">Products</a>
-    </div>
-    <div class="footer-col">
-      <h4>Contact</h4>
-      <p>hello@nanocharafrica.com.ng</p>
-      <p>+234 XXX XXX XXXX</p>
-    </div>
-    <p class="footer-copyright">&copy; 2026 NanoChar Africa. All rights reserved.</p>
-  </footer>
-
-  <script src="../script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
